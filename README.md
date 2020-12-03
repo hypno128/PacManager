@@ -5,10 +5,12 @@ Program for extracting and then re-packaging .pac archive files for the purpose 
 
 To extract the data from a pac file, use the following command:
 * PacManager -u [source .pac file] [destination directory]
+
 If no destination directory is provided, it will create one with the same name as the source .pac file in the same location. All individual files in the source .pac file will be extracted to the destination directory. 
 
 To build a new .pac file using the data, use the following command:
 * PacManager -p [source directory] [destination filename] 
+
 If no destination filename is provided, it will create one using the same name as the source directory. All files in the source directory will be added to the new .pac file. 
 
 General use is to run "PacMaster -u srp.pac" to extract all data from the .pac file. Translate the data in the extracted directory. Then run "PacMaster -p srp" to re-package it all into a .pac file to be used in the game. 
